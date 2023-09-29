@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FileActivity_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD TEXT"
+            android:textAlignment="center"
+            android:textSize="21sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:inputType="textMultiLine"
+                android:hint="Tulis Pesan"
+                android:textSize="18sp"
+                android:autofillHints="" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="270dp" >
+
+            <Button
+                android:id="@+id/btnSavePrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE AS PRIVATE"
+                android:onClick="savePrivate"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnSavePublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE AS PUBLIC"
+                android:onClick="savePublic"
+                android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btnDeletePrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELETE PRIVATE"
+                android:onClick="deletePrivate"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/btnDeletePublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELETE PUBLIC"
+                android:onClick="deletePublic"
+                android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK TO VIEW"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

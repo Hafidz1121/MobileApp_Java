@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/listView"
+        android:title="List View"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/recyclerView"
+        android:title="Recycler View"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/fragmentView"
+        android:title="Fragment View"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/intent"
+        android:title="Intent"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/implicitIntent"
+                android:title="Intent Implicit"/>
+
+            <item
+                android:id="@+id/implicitExplicit"
+                android:title="Intent Explicit"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/manageFile"
+        android:title="Manajemen File"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/sqlLite_txt"
+                android:title="SQLite TXT"/>
+
+            <item
+                android:id="@+id/sqlLite_db"
+                android:title="SQLite DB"/>
+        </menu>
+
+    </item>
+</menu>
