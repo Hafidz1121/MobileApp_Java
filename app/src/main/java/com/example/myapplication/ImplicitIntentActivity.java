@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ImplicitIntentActivity extends AppCompatActivity {
     private EditText txtInput;
@@ -31,10 +32,14 @@ public class ImplicitIntentActivity extends AppCompatActivity {
         btnVisit = findViewById(R.id.btnVisit_Implicit);
 
         btnVisit.setOnClickListener(v-> {
-            String url = txtInput.getText().toString();
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            if (txtInput.getText().toString().isEmpty()) {
+                Toast.makeText(getApplicationContext(), "Link URL Tidak Boleh Kosong!", Toast.LENGTH_SHORT).show();
+            } else {
+                String url = "https://" + txtInput.getText().toString();
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 
-            startActivity(intent);
+                startActivity(intent);
+            }
         });
     }
 }

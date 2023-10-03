@@ -103,6 +103,8 @@ public class SQLActivity extends AppCompatActivity {
 
                                 SQLiteDatabase db = sqlHelper.getWritableDatabase();
                                 db.execSQL("DELETE FROM biodata WHERE nama = '"+ namaToDelete +"'");
+
+                                Toast.makeText(getApplicationContext(), "Berhasil Menghapus Data!", Toast.LENGTH_SHORT).show();
                                 RefreshList();
                                 break;
                         }

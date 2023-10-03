@@ -17,23 +17,37 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp">
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/textInput_Implicit"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="https://"
-            android:textSize="17sp"
-            android:hint="Masukan Link URL"
-            android:inputType="textUri"
-            android:autofillHints="" />
+            android:layout_margin="15dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/textInput_Implicit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="17sp"
+                android:hint="Masukan Link URL"
+                android:inputType="textUri"
+                android:autofillHints="" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnVisit_Implicit"

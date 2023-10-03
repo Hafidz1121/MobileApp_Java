@@ -18,7 +18,6 @@ import java.io.IOException;
 public class FileActivity_1 extends AppCompatActivity {
     private EditText inputTxt;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
